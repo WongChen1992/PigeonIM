@@ -6,4 +6,11 @@
     <string name="sign_in">登录</string>
     <string name="sign_up"><u>立即注册</u></string>
     <string name="find_password"><u>忘记密码?</u></string>
+    <string name="register"><u>立即注册</u></string>
+    <string name="register_phone_number"><u>请输入手机号</u></string>
+    <string name="register_password_input"><u>请输入密码</u></string>
+    <string name="register_password_twice"><u>请确认密码</u></string>
+    <string name="register_verification_code"><u>请输入验证码</u></string>
+    <string name="register_verification_get_code"><u>获取</u></string>
+
 </resources>

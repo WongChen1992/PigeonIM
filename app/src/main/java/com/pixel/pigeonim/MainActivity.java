@@ -1,5 +1,6 @@
 package com.pixel.pigeonim;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
@@ -13,6 +14,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.pixel.pigeonim.activity.BaseActivity;
+import com.pixel.pigeonim.activity.RegisterActivity;
+
+import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -78,6 +84,13 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+        etPassword.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                signIn();
+                return false;
+            }
+        });
     }
 
     @OnClick({R.id.tv_find_password, R.id.tv_sign_up, R.id.btn_sign_in})
@@ -87,19 +100,34 @@ public class MainActivity extends BaseActivity {
 
                 break;
             case R.id.tv_sign_up:
+                Intent sign_up_intent=new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(sign_up_intent);
                 break;
             case R.id.btn_sign_in:
                 signIn();
                 break;
         }
     }
+    public static boolean isMobileNO(String number) {
+        Pattern p = Pattern.compile("^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$");
+        Matcher m = p.matcher(number);
+        System.out.println(m.matches() + "---");
+
+        return m.matches();
+    }
+
+    public static void main(String[] args) throws IOException {
+        System.out.println(RegisterActivity.isMobileNO("12016155153"));
+    }
 
     private void signIn() {
         String account = etAccount.getText().toString();
         String password = etPassword.getText().toString();
         if (TextUtils.isEmpty(account)) {
-            textInputLayoutAccount.setError("账户不能为空");
-            return;
+            textInputLayoutAccount.setError("手机号不能为空");
+
+        }else if (!TextUtils.isEmpty(account)&&isMobileNO(etAccount.getText().toString())==false){
+            textInputLayoutAccount.setError("手机格式不正确");
         }
         if (TextUtils.isEmpty(password)) {
             textInputLayoutPassword.setError("密码不能为空");

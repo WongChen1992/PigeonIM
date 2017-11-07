@@ -62,7 +62,7 @@
                 android:layout_gravity="left"
                 android:text="@string/find_password"
                 android:textColor="@color/colorAccent"
-                android:textSize="@dimen/text_size_1" />
+                android:textSize="@dimen/text_middle" />
 
             <TextView
                 android:id="@+id/tv_sign_up"
@@ -71,7 +71,7 @@
                 android:layout_gravity="right"
                 android:text="@string/sign_up"
                 android:textColor="@color/colorAccent"
-                android:textSize="@dimen/text_size_1" />
+                android:textSize="@dimen/text_middle" />
         </FrameLayout>
 
         <Button
@@ -82,7 +82,7 @@
             android:background="@color/colorAccent"
             android:text="@string/sign_in"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_large"
             android:textStyle="bold" />
 
     </LinearLayout>

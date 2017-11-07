@@ -4,6 +4,6 @@
     <string name="account_hint">账户</string>
     <string name="password">密码</string>
     <string name="sign_in">登录</string>
-    <string name="sign_up">立即注册</string>
+    <string name="sign_up"><u>立即注册</u></string>
     <string name="find_password"><u>忘记密码?</u></string>
 </resources>

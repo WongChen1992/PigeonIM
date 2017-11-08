@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/wongchen/Desktop/PigeonIM/IMLib/build/intermediates/res/merged/androidTest/debug/values-en_values-en.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/wongchen/Desktop/PigeonIM/IMLib/build/intermediates/bundles/debug/res/values-en/values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,128,216,292,384,463",
+                        "endColumns": "72,87,75,91,78,75",
+                        "endOffsets": "123,211,287,379,458,534"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/wongchen/Desktop/PigeonIM/IMLib/build/intermediates/res/merged/androidTest/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/wongchen/Desktop/PigeonIM/IMLib/build/intermediates/bundles/debug/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,106,153,215,265,313,367,417,479,560,627,705,770",
+                        "endColumns": "50,46,61,49,47,53,49,61,80,66,77,64,56",
+                        "endOffsets": "101,148,210,260,308,362,412,474,555,622,700,765,822"
+                    }
+                }
+            ]
+        }
+    ]
+}

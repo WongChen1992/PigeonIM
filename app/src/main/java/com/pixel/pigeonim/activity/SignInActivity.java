@@ -93,7 +93,7 @@ public class SignInActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_find_password:
-
+                startActivity(PassWordFindActivity.class);
                 break;
             case R.id.tv_sign_up:
                 startActivity(SignUpActivity.class);

@@ -19,7 +19,15 @@
         <activity android:name=".activity.RegisterActivity">
 
         </activity>
-
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.pixel.pigeonim.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
     </application>
 
 </manifest>

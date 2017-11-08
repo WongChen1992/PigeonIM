@@ -1,5 +1,7 @@
 package com.pixel.pigeonim.activity;
 
+import android.os.Handler;
+
 import com.pixel.pigeonim.R;
 
 /**
@@ -14,6 +16,13 @@ public class WelcomeActivity extends BaseActivity {
 
     @Override
     public void init() {
-        startActivity(SignInActivity.class);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //TODO 判断是否已经在登录状态
+                startActivityAndFinish(SignInActivity.class);
+            }
+        }, 1000);
     }
 }

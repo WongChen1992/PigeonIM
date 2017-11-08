@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PigeonIM</string>
+    <string name="app_name">信鸽</string>
 
     <string name="account_hint">账户</string>
     <string name="password">密码</string>

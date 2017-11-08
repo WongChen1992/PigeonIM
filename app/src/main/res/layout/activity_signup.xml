@@ -97,7 +97,7 @@
                 android:background="@color/colorAccent"
                 android:text="@string/register_verification_get_code"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/text_middle"
+                android:textSize="@dimen/text_size_middle"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -110,7 +110,7 @@
             android:background="@color/colorAccent"
             android:text="@string/sign_up_"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_large"
+            android:textSize="@dimen/text_size_large"
             android:textStyle="bold" />
 
     </LinearLayout>

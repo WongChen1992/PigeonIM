@@ -4,6 +4,7 @@ import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.pixel.pigeonim.common.CommonUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import io.rong.imlib.RongIMClient;
 
 /**
  * Created by wongchen on 2017/11/3.
@@ -106,18 +108,38 @@ public class SignInActivity extends BaseActivity {
 
 
     private void signIn() {
-        String account = etAccount.getText().toString();
-        String password = etPassword.getText().toString();
-        if (TextUtils.isEmpty(account)) {
-            textInputLayoutAccount.setError("手机号不能为空");
+//        String account = etAccount.getText().toString();
+//        String password = etPassword.getText().toString();
+//        if (TextUtils.isEmpty(account)) {
+//            textInputLayoutAccount.setError("手机号不能为空");
+//
+//        } else if (!TextUtils.isEmpty(account) && CommonUtils.isMobileNum(account) == false) {
+//            textInputLayoutAccount.setError("手机格式不正确");
+//        }
+//        if (TextUtils.isEmpty(password)) {
+//            textInputLayoutPassword.setError("密码不能为空");
+//            return;
+//        }
 
-        } else if (!TextUtils.isEmpty(account) && CommonUtils.isMobileNum(account) == false) {
-            textInputLayoutAccount.setError("手机格式不正确");
-        }
-        if (TextUtils.isEmpty(password)) {
-            textInputLayoutPassword.setError("密码不能为空");
-            return;
-        }
+        //TODO 登录成功后需用获取的Token 连接IM
+        String token = "MQZZLyEQCg8B+wktbT6LRSoqQbMQNljAVF/ShO4DvFjIPtDVH0kIsj4eQ5YZp5C/ebR0pR6N73E=";
+        RongIMClient.connect(token, new RongIMClient.ConnectCallback() {
+            @Override
+            public void onTokenIncorrect() {
+                //Connect Token 失效的状态处理，需要重新获取 Token
+                Log.e("====", "onTokenIncorrect");
+            }
 
+            @Override
+            public void onSuccess(String userId) {
+
+                startActivity(MainActivity.class);
+            }
+
+            @Override
+            public void onError(RongIMClient.ErrorCode errorCode) {
+                Log.e("====", errorCode.getMessage());
+            }
+        });
     }
 }

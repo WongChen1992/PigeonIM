@@ -20,7 +20,8 @@ public class WelcomeActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                //TODO 判断是否已经在登录状态
+                //TODO 判断是否已经在登录状态 若已登录直接运行IM连接
+                // RongIM.connect(cacheToken, SealAppContext.getInstance().getConnectCallback());
                 startActivityAndFinish(SignInActivity.class);
             }
         }, 1000);

@@ -5,4 +5,8 @@
     <color name="colorAccent">#3F51B5</color>
     <color name="windowBackground">#F7F7F7</color>
     <color name="colorControlNormal">#3F51B5</color>
+    <color name="textColorPrimary">@android:color/white</color>
+
+    <color name="colorTabNormalColor">#B3FFFFFF</color>
+    <color name="colorTabSelectedColor">#FFFFFF</color>
 </resources>

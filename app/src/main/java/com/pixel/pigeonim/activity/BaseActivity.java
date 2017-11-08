@@ -1,5 +1,6 @@
 package com.pixel.pigeonim.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -29,5 +30,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void onDestroy() {
         super.onDestroy();
         unbinder.unbind();
+    }
+
+    public void startActivity(Class activityClass) {
+        Intent intent = new Intent(this, activityClass);
+        startActivity(intent);
     }
 }

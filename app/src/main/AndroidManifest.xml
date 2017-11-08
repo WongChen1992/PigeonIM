@@ -3,22 +3,33 @@
     package="com.pixel.pigeonim">
 
     <application
+        android:name=".app.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.RegisterActivity">
 
-        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.SignInActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:screenOrientation="portrait"></activity>
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.pixel.pigeonim.FileProvider"

@@ -29,6 +29,12 @@
         <activity
             android:name=".activity.SignUpActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.PassWordFindActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"></activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"

@@ -36,4 +36,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         Intent intent = new Intent(this, activityClass);
         startActivity(intent);
     }
+
+    public void startActivityAndFinish(Class activityClass) {
+        Intent intent = new Intent(this, activityClass);
+        startActivity(intent);
+        finish();
+    }
 }

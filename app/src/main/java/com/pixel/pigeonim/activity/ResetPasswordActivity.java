@@ -2,6 +2,7 @@ package com.pixel.pigeonim.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -19,6 +20,8 @@ import butterknife.OnClick;
  */
 
 public class ResetPasswordActivity extends BaseActivity {
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     @BindView(R.id.et_new_password)
     EditText etNewPassword;
     @BindView(R.id.text_password)
@@ -37,6 +40,8 @@ public class ResetPasswordActivity extends BaseActivity {
 
     @Override
     public void init() {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("重置密码");
         etAffirm.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

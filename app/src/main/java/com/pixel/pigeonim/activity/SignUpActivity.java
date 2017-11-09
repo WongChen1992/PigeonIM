@@ -3,6 +3,7 @@ package com.pixel.pigeonim.activity;
 import android.graphics.Color;
 import android.os.CountDownTimer;
 import android.support.design.widget.TextInputLayout;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -23,6 +24,8 @@ import butterknife.OnClick;
  */
 
 public class SignUpActivity extends BaseActivity {
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     @BindView(R.id.et_register_phonenumber)
     EditText etRegisterPhonenumber;
     @BindView(R.id.text_register_phonenumber)
@@ -51,6 +54,8 @@ public class SignUpActivity extends BaseActivity {
 
     @Override
     public void init() {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("注册");
         etRegisterPhonenumber.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

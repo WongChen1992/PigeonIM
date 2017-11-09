@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.design.widget.TextInputLayout;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -23,6 +24,8 @@ import butterknife.OnClick;
  */
 
 public class PassWordFindActivity extends BaseActivity {
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     @BindView(R.id.et_phone)
     EditText etPhone;
     @BindView(R.id.text_phone)
@@ -43,6 +46,9 @@ public class PassWordFindActivity extends BaseActivity {
 
     @Override
     public void init() {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("找回密码");
+
         etPhone.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

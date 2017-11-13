@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<Preference
+    android:maxLines="1"
+    android:selectAllOnFocus="true"
+    android:singleLine="true"
+    android:textColor="@color/colorPrimary"
+    android:title="@string/email"
+    android:summary="@string/address">
+</Preference>
+
+<Preference
+    android:maxLines="1"
+    android:selectAllOnFocus="true"
+    android:singleLine="true"
+    android:textColor="@color/colorPrimary"
+    android:title="@string/open_source"
+    android:summary="@string/source_address">
+</Preference>
+
+</PreferenceScreen>

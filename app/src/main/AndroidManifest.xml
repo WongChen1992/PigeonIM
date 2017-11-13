@@ -35,6 +35,10 @@
         <activity
             android:name=".activity.ResetPasswordActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Setting"></activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"

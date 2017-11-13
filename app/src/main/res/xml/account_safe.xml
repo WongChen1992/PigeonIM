@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/name"
+        android:inputType="textCapWords"
+        android:key="change_account"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:title="@string/change_account" />
+    <Preference
+        android:enabled="true"
+        android:key="password"
+        android:textColor="@color/colorPrimary"
+        android:title="@string/change_password">
+
+
+
+    </Preference>
+</PreferenceScreen>

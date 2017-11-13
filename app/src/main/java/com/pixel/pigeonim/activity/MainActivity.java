@@ -90,6 +90,7 @@ public class MainActivity extends BaseActivity {
 //                intent.setClass(this, SettingsActivity.class);
 //                startActivity(intent);
                 Log.e("====", "setting");
+                startActivity(SettingActivity.class);
                 break;
         }
         return super.onOptionsItemSelected(item);

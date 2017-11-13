@@ -1,0 +1,22 @@
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.pixel.pigeonim.activity.SettingActivity$FadebackPreferenceFragment"
+        android:title="@string/fade_back"
+        />
+
+    <header
+        android:fragment="com.pixel.pigeonim.activity.SettingActivity$AboutUsPreferenceFragment"
+        android:title="@string/about_us"
+        />
+
+    <header
+        android:fragment="com.pixel.pigeonim.activity.SettingActivity$AccoutAndSafePreferenceFragment"
+        android:title="@string/account_safe"
+        />
+
+</preference-headers>

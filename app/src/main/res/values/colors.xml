@@ -8,5 +8,5 @@
     <color name="textColorPrimary">@android:color/white</color>
 
     <color name="colorTabNormalColor">#B3FFFFFF</color>
-    <color name="colorTabSelectedColor">#FFFFFF</color>
+    <color name="colorTabSelectedColor">#3F51B5</color>
 </resources>

@@ -122,7 +122,7 @@ public class SignInActivity extends BaseActivity {
 //        }
 
         //TODO 登录成功后需用获取的Token 连接IM
-        String token = "MQZZLyEQCg8B+wktbT6LRSoqQbMQNljAVF/ShO4DvFjIPtDVH0kIsj4eQ5YZp5C/ebR0pR6N73E=";
+        String token = "rq4MDKpAuPQrguPKAqEoRLOeZFUHm564XgibGJz3apUtKlZ4pPBLbl33aRqUoaaTdS9/mZD8Qr91wMvbdNBO5A==";
         RongIMClient.connect(token, new RongIMClient.ConnectCallback() {
             @Override
             public void onTokenIncorrect() {

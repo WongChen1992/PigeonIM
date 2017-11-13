@@ -22,6 +22,17 @@
     <string name="find_password_">找回密码</string>
     <string name="confirm"><u>确认</u></string>
     <string name="register_hint_password_new"><u>请输入新密码</u></string>
+    <string name="fade_back">反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="account_safe">账户与安全</string>
+    <string name="name">kobe</string>
+    <string name="change_account">修改用户名</string>
+    <string name="change_password">修改密码</string>
+    <string name="email">邮箱</string>
+    <string name="address">250746335@qq.com</string>
+    <string name="open_source">开源地址</string>
+    <string name="source_address">https://github.com/sealtalk/sealtalk-android</string>
+
 
 
 </resources>
